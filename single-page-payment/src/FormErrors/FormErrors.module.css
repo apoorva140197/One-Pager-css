@@ -1,0 +1,9 @@
+.FormErrors{
+    color:red;
+    padding:0 24px;
+}
+
+.FormErrors p{
+    margin:0;
+    padding:0;
+}

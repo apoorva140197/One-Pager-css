@@ -1,0 +1,292 @@
+.MainPanel{
+    display: flex;
+    flex-direction: column;
+    width:724px;
+    height:830;
+    margin-left:135px;
+    background: #FFFFFF;
+    box-shadow: 0px 2px 10px rgba(151, 151, 151, 0.21708);  
+    padding:32px;
+}
+
+.Header{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+    padding-bottom: 24px;
+    border-bottom: 1px solid #00002e2b;
+
+}
+
+.HeaderLeft{
+    width:35%;
+
+}
+
+
+.HeaderRight{
+    width: 65%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+
+}
+
+.Heading{
+    font-size: 24px;
+    line-height: 36px;
+    color: #000000;
+    mix-blend-mode: normal;
+    opacity: 0.87;
+    margin:0;
+
+}
+.Content{
+    display: flex;
+
+}
+
+.ImageDesktop{
+    display:block;
+}
+
+.ImageMobile{
+    display: none;
+
+}
+
+.tagName{
+    font-size: 14px;
+    line-height: 16px;
+    color: rgba(0, 0, 0, 0.6);
+    padding:0 0 0 10px;
+}
+
+.cost{
+    font-size: 24px;
+    line-height: 29px;
+    color: rgba(0, 0, 0, 0.77);
+    opacity: 0.87;
+    margin:0;
+}
+
+.Description{
+    border-bottom: 1px solid #00002e2b;
+    padding:0 0 24px 0;
+    
+}
+
+
+.DescriptionHead{
+    font-size: 16px;
+    line-height: 22px;
+    color: #000000;
+    opacity: 0.87;
+}
+
+.DescriptionParagraph{
+    font-size: 16px;
+    line-height: 22px;
+    color: rgba(0, 0, 0, 0.6);
+    
+
+}
+
+.Summary{
+    border-bottom: 1px solid #00002e2b;
+    padding:0 0 24px 0;
+
+}
+
+.SummaryHead{
+    font-size: 16px;
+    line-height: 22px;
+    color: #000000;
+    opacity: 0.87;
+
+
+}
+.SummaryContent{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    width:100%;
+}
+
+.SummaryContentDivision{
+    display: flex;
+    width:25%;
+}
+
+.SummaryText{
+    display:flex;
+    flex-direction:column;
+}
+
+.SummaryTextDuration{
+     display:flex;
+    flex-direction:column;
+
+}
+
+.SummaryListDuration{
+    margin:0;
+    font-size: 14px;
+    line-height: 21px;
+    color: #000000;
+    mix-blend-mode: normal;
+    opacity: 0.87;
+    padding:0 0 0 16px;
+
+}
+
+.SummaryList{
+    margin:0;
+    font-size: 14px;
+    line-height: 21px;
+    color: #000000;
+    mix-blend-mode: normal;
+    opacity: 0.87;
+    padding:0 0 0 16px;
+}
+
+.PriceDetails{
+
+    border-bottom: 1px solid #00002e2b;
+    padding:0 0 24px 0;
+
+}
+
+.PriceDetailsHead{
+    font-size: 16px;
+    line-height: 22px;
+    color: #000000;
+    opacity: 0.87;
+
+}
+
+.PriceList{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.PriceListText{
+    font-size: 16px;
+    line-height: 22px;
+    color: rgba(0, 0, 0, 0.77);
+    opacity: 0.87;
+}
+
+.Amount{
+     padding:0 0 24px 0;
+     display: flex;
+     justify-content: space-between;
+    
+}
+
+.AmountText{
+    font-size: 16px;
+    line-height: 22px;
+    color: rgba(0, 0, 0, 0.77);
+    opacity: 0.87;
+    margin-bottom: 0;
+}
+
+
+
+
+@media(max-width:1100px){
+    .MainPanel{
+    width:auto;
+    margin:0;
+    padding: 0;
+    }
+
+    .Header{
+    flex-direction: column;
+    }
+
+    .HeaderLeft{
+    width:100%;
+    }
+
+    .HeaderRight{
+    width: 100%;
+    }
+
+    .Heading{
+    padding:0 0 0 16px;
+    font-size: 18px;
+    }
+
+    .Content{
+    padding:0 0 0 16px;
+    }
+    
+    .ImageDesktop {
+    display:none;
+    }
+
+    .ImageMobile {
+    display: block;
+
+    }
+
+    .tagName{
+    padding:0 0 0 16px;
+    }
+    .cost{
+    padding:0 0 0 16px;
+
+    }
+
+    .Description{
+        padding:0 16px 0 16px;
+    }
+
+    .Summary{
+    padding:0 0 16px 16px;
+
+    }
+     .SummaryList{
+        padding:0 0 0 2px;
+    }
+
+    .SummaryListDuration{
+        width:200px;
+    }
+
+    .SummaryText{
+        flex-direction: row;
+        padding:0 0 0 5px;
+        
+    }
+
+    .SummaryContent{
+        display: grid;
+        grid-template-columns: repeat(3,33.33%);
+       
+    }
+    /* .SummaryContentDivision{
+        width: auto;
+    }   */
+
+    .PriceDetails{
+    padding: 0 16px 0 16px;
+    }
+
+    .Amount{
+    padding: 0 16px 24px 16px;
+    }
+    
+}
+
+
+/* @media(min-width:1310px) and (max-width:1360px){
+    .SummaryListDuration{
+        width:200px;
+    }
+} */

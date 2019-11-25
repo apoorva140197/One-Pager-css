@@ -1,0 +1,83 @@
+.mainContent2 {
+    display: block;
+    height: 5vh;
+    overflow-wrap: break-word;
+    /* overflow: hidden; */
+}
+
+.mainContent2 .open2 {
+    height: auto;
+    overflow-wrap: break-word;
+    overflow: scroll;
+}
+
+.paraDesc {
+    display: block;
+    font-size: var(--font--size--small);
+    overflow-wrap: break-word;
+    width: 100vw;
+    text-align: left;
+    /* word-break: break-all; */
+    box-sizing: border-box;
+    max-width: 100%;
+    height: 5.5em;
+    overflow: hidden;
+    /* padding: 10px; */
+    display: inline-block;
+    text-align: justify;
+    text-justify: inter-word;
+}
+
+.paraDesc p {
+    margin: 0;
+    padding: 0;
+}
+
+/* .paraDesc *{
+    width: 100%;
+} */
+.paraComplete {
+    display: block;
+    font-size: var(--font--size--small);
+    overflow-wrap: break-word;
+    width: 100vw;
+    max-width: 100%;
+    box-sizing: border-box;
+    text-align: left;
+    overflow-x: hidden;
+    text-align: justify;
+    text-justify: inter-word;
+    height: auto;
+    /* padding: 2%; */
+}
+
+.showPara {}
+
+.hidePara {
+    display: none;
+}
+
+.mainContent2Button {
+    font-size: var(--font--size--small);
+}
+
+.btnInAcc {
+    padding:0;
+    font-size: var(--font--size--small);
+    line-height: 19px;
+    display: flex;
+    /* margin-left: 1%; */
+    margin-bottom: 2%;
+    margin-top: 2%;
+    align-items: center;
+    text-transform: uppercase;
+    color: #009AE0;
+    background: none !important;
+    border: none !important;
+    outline: none;
+    cursor: pointer;
+}
+/* 
+.borderBottom {
+    border-bottom: 1px solid #e2e2e2;
+} */

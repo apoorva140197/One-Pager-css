@@ -1,0 +1,105 @@
+.SidePanel{
+    display: flex;
+    flex-direction: column;
+    width:414px;
+    height:460px;
+    margin:0 135px 0 32px;  
+    background: #FFFFFF;
+    box-shadow: 0px 2px 10px rgba(151, 151, 151, 0.21708);  
+        
+}
+
+.SidePanelHeading{
+    font-size: 18px;
+    margin-bottom:0;
+    line-height: 21px;
+    display: flex;
+    align-items: center;
+    color: #000000;
+    mix-blend-mode: normal;
+    opacity: 0.87;
+    padding:0 0 0 24px;
+}
+
+
+.SidePanelForm{
+    padding:24px 24px 0 24px;
+    
+    
+}
+
+
+
+.SidePanelFormRowInput{
+    background: #FFFFFF;
+    border: 1px solid #E5E5E5;
+    box-sizing: border-box;
+    border-radius: 2px;
+    height:40px;
+    font-size: 14px;
+    line-height: 17px;
+    color: rgba(0, 0, 0, 0.4);
+    padding:0 0 0 16px;
+    width:100%;
+}
+
+.SubmitButtonContainer{
+    background: #FFFFFF;
+    box-shadow: 0px 1px 4px rgba(0, 0, 0, 0.24);
+    padding: 12px 32px;
+    display: flex;
+    align-items: center;
+}
+
+.SubmitButton{
+    background: #009AE0;
+    box-shadow: 0px 1px 4px rgba(0, 0, 0, 0.12);
+    border-radius: 4px; 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 350px;
+    height: 44px; 
+    font-size: 16px;
+    line-height: 22px;
+    text-align: center;
+    color: #FFFFFF;  
+    cursor: pointer; 
+}
+
+.SubmitButton:disabled {
+    background: grey;
+    cursor: not-allowed;
+}
+
+
+.panel {
+	color: red;
+	margin: 16px;
+}
+
+
+@media(max-width:1100px){
+    .SidePanel{
+        margin:8px 0 0 0;
+        width:auto;
+        
+    }
+
+    .SidePanelForm{
+        padding:32px 24px 32px 24px;
+    }
+
+    .SubmitButtonContainer{
+        position: fixed;
+        bottom: 0;
+        width:100%; 
+        padding:12px 8%;       
+    }
+
+    .SubmitButton{
+        width:84%;
+
+    }
+    
+}

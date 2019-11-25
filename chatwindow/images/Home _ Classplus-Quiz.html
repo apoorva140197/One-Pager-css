@@ -1,0 +1,540 @@
+<!DOCTYPE html>
+<!-- saved from url=(0029)https://cms.classplusapp.com/ -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+    <link rel="shortcut icon" href="https://cms.classplusapp.com/favicon.ico">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="theme-color" content="#000000">
+    <!--
+      manifest.json provides metadata used when your web app is added to the
+      homescreen on Android. See https://developers.google.com/web/fundamentals/web-app-manifest/
+    -->
+    <script type="text/javascript" async="" src="./Home _ Classplus-Quiz_files/a.js.download"></script><script type="text/x-mathjax-config;executed=true">
+      MathJax.Hub.Config({
+        messageStyle: "none",
+        tex2jax: {preview: "none"}
+      });
+    </script>
+    <script type="text/javascript" src="./Home _ Classplus-Quiz_files/MathJax.js.download"> </script>
+
+    <link rel="manifest" href="https://cms.classplusapp.com/manifest.json">
+    <link rel="stylesheet" href="./Home _ Classplus-Quiz_files/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <script>
+      var _rollbarConfig = {
+        accessToken: "9b9532e89a6b43fab4b94b03093b62e2",
+        captureUncaught: true,
+        captureUnhandledRejections: true,
+        enabled: "%REACT_APP_STAGE%" === "production",
+      };
+
+      // Rollbar Snippet
+      !(function(r) {
+        function e(n) {
+          if (o[n]) return o[n].exports;
+          var t = (o[n] = { exports: {}, id: n, loaded: !1 });
+          return (
+            r[n].call(t.exports, t, t.exports, e), (t.loaded = !0), t.exports
+          );
+        }
+        var o = {};
+        return (e.m = r), (e.c = o), (e.p = ""), e(0);
+      })([
+        function(r, e, o) {
+          "use strict";
+          var n = o(1),
+            t = o(4);
+          (_rollbarConfig = _rollbarConfig || {}),
+            (_rollbarConfig.rollbarJsUrl =
+              _rollbarConfig.rollbarJsUrl ||
+              "https://cdnjs.cloudflare.com/ajax/libs/rollbar.js/2.4.6/rollbar.min.js"),
+            (_rollbarConfig.async =
+              void 0 === _rollbarConfig.async || _rollbarConfig.async);
+          var a = n.setupShim(window, _rollbarConfig),
+            l = t(_rollbarConfig);
+          (window.rollbar = n.Rollbar),
+            a.loadFull(
+              window,
+              document,
+              !_rollbarConfig.async,
+              _rollbarConfig,
+              l,
+            );
+        },
+        function(r, e, o) {
+          "use strict";
+          function n(r) {
+            return function() {
+              try {
+                return r.apply(this, arguments);
+              } catch (r) {
+                try {
+                  
+                } catch (r) {}
+              }
+            };
+          }
+          function t(r, e) {
+            (this.options = r), (this._rollbarOldOnError = null);
+            var o = s++;
+            (this.shimId = function() {
+              return o;
+            }),
+              "undefined" != typeof window &&
+                window._rollbarShims &&
+                (window._rollbarShims[o] = { handler: e, messages: [] });
+          }
+          function a(r, e) {
+            if (r) {
+              var o = e.globalAlias || "Rollbar";
+              if ("object" == typeof r[o]) return r[o];
+              (r._rollbarShims = {}), (r._rollbarWrappedError = null);
+              var t = new p(e);
+              return n(function() {
+                e.captureUncaught &&
+                  ((t._rollbarOldOnError = r.onerror),
+                  i.captureUncaughtExceptions(r, t, !0),
+                  i.wrapGlobals(r, t, !0)),
+                  e.captureUnhandledRejections &&
+                    i.captureUnhandledRejections(r, t, !0);
+                var n = e.autoInstrument;
+                return (
+                  e.enabled !== !1 &&
+                    (void 0 === n ||
+                      n === !0 ||
+                      ("object" == typeof n && n.network)) &&
+                    r.addEventListener &&
+                    (r.addEventListener("load", t.captureLoad.bind(t)),
+                    r.addEventListener(
+                      "DOMContentLoaded",
+                      t.captureDomContentLoaded.bind(t),
+                    )),
+                  (r[o] = t),
+                  t
+                );
+              })();
+            }
+          }
+          function l(r) {
+            return n(function() {
+              var e = this,
+                o = Array.prototype.slice.call(arguments, 0),
+                n = { shim: e, method: r, args: o, ts: new Date() };
+              window._rollbarShims[this.shimId()].messages.push(n);
+            });
+          }
+          var i = o(2),
+            s = 0,
+            d = o(3),
+            c = function(r, e) {
+              return new t(r, e);
+            },
+            p = d.bind(null, c);
+          (t.prototype.loadFull = function(r, e, o, t, a) {
+            var l = function() {
+                var e;
+                if (void 0 === r._rollbarDidLoad) {
+                  e = new Error("rollbar.js did not load");
+                  for (var o, n, t, l, i = 0; (o = r._rollbarShims[i++]); )
+                    for (o = o.messages || []; (n = o.shift()); )
+                      for (t = n.args || [], i = 0; i < t.length; ++i)
+                        if (((l = t[i]), "function" == typeof l)) {
+                          l(e);
+                          break;
+                        }
+                }
+                "function" == typeof a && a(e);
+              },
+              i = !1,
+              s = e.createElement("script"),
+              d = e.getElementsByTagName("script")[0],
+              c = d.parentNode;
+            (s.crossOrigin = ""),
+              (s.src = t.rollbarJsUrl),
+              o || (s.async = !0),
+              (s.onload = s.onreadystatechange = n(function() {
+                if (
+                  !(
+                    i ||
+                    (this.readyState &&
+                      "loaded" !== this.readyState &&
+                      "complete" !== this.readyState)
+                  )
+                ) {
+                  s.onload = s.onreadystatechange = null;
+                  try {
+                    c.removeChild(s);
+                  } catch (r) {}
+                  (i = !0), l();
+                }
+              })),
+              c.insertBefore(s, d);
+          }),
+            (t.prototype.wrap = function(r, e, o) {
+              try {
+                var n;
+                if (
+                  ((n =
+                    "function" == typeof e
+                      ? e
+                      : function() {
+                          return e || {};
+                        }),
+                  "function" != typeof r)
+                )
+                  return r;
+                if (r._isWrap) return r;
+                if (
+                  !r._rollbar_wrapped &&
+                  ((r._rollbar_wrapped = function() {
+                    o && "function" == typeof o && o.apply(this, arguments);
+                    try {
+                      return r.apply(this, arguments);
+                    } catch (o) {
+                      var e = o;
+                      throw (e &&
+                        ("string" == typeof e && (e = new String(e)),
+                        (e._rollbarContext = n() || {}),
+                        (e._rollbarContext._wrappedSource = r.toString()),
+                        (window._rollbarWrappedError = e)),
+                      e);
+                    }
+                  }),
+                  (r._rollbar_wrapped._isWrap = !0),
+                  r.hasOwnProperty)
+                )
+                  for (var t in r)
+                    r.hasOwnProperty(t) && (r._rollbar_wrapped[t] = r[t]);
+                return r._rollbar_wrapped;
+              } catch (e) {
+                return r;
+              }
+            });
+          for (
+            var u = "log,debug,info,warn,warning,error,critical,global,configure,handleUncaughtException,handleUnhandledRejection,captureEvent,captureDomContentLoaded,captureLoad".split(
+                ",",
+              ),
+              f = 0;
+            f < u.length;
+            ++f
+          )
+            t.prototype[u[f]] = l(u[f]);
+          r.exports = { setupShim: a, Rollbar: p };
+        },
+        function(r, e) {
+          "use strict";
+          function o(r, e, o) {
+            if (r) {
+              var t;
+              "function" == typeof e._rollbarOldOnError
+                ? (t = e._rollbarOldOnError)
+                : r.onerror &&
+                  !r.onerror.belongsToShim &&
+                  ((t = r.onerror), (e._rollbarOldOnError = t));
+              var a = function() {
+                var o = Array.prototype.slice.call(arguments, 0);
+                n(r, e, t, o);
+              };
+              (a.belongsToShim = o), (r.onerror = a);
+            }
+          }
+          function n(r, e, o, n) {
+            r._rollbarWrappedError &&
+              (n[4] || (n[4] = r._rollbarWrappedError),
+              n[5] || (n[5] = r._rollbarWrappedError._rollbarContext),
+              (r._rollbarWrappedError = null)),
+              e.handleUncaughtException.apply(e, n),
+              o && o.apply(r, n);
+          }
+          function t(r, e, o) {
+            if (r) {
+              "function" == typeof r._rollbarURH &&
+                r._rollbarURH.belongsToShim &&
+                r.removeEventListener("unhandledrejection", r._rollbarURH);
+              var n = function(r) {
+                var o, n, t;
+                try {
+                  o = r.reason;
+                } catch (r) {
+                  o = void 0;
+                }
+                try {
+                  n = r.promise;
+                } catch (r) {
+                  n = "[unhandledrejection] error getting `promise` from event";
+                }
+                try {
+                  (t = r.detail), !o && t && ((o = t.reason), (n = t.promise));
+                } catch (r) {
+                  t = "[unhandledrejection] error getting `detail` from event";
+                }
+                o ||
+                  (o =
+                    "[unhandledrejection] error getting `reason` from event"),
+                  e &&
+                    e.handleUnhandledRejection &&
+                    e.handleUnhandledRejection(o, n);
+              };
+              (n.belongsToShim = o),
+                (r._rollbarURH = n),
+                r.addEventListener("unhandledrejection", n);
+            }
+          }
+          function a(r, e, o) {
+            if (r) {
+              var n,
+                t,
+                a = "EventTarget,Window,Node,ApplicationCache,AudioTrackList,ChannelMergerNode,CryptoOperation,EventSource,FileReader,HTMLUnknownElement,IDBDatabase,IDBRequest,IDBTransaction,KeyOperation,MediaController,MessagePort,ModalWindow,Notification,SVGElementInstance,Screen,TextTrack,TextTrackCue,TextTrackList,WebSocket,WebSocketWorker,Worker,XMLHttpRequest,XMLHttpRequestEventTarget,XMLHttpRequestUpload".split(
+                  ",",
+                );
+              for (n = 0; n < a.length; ++n)
+                (t = a[n]), r[t] && r[t].prototype && l(e, r[t].prototype, o);
+            }
+          }
+          function l(r, e, o) {
+            if (e.hasOwnProperty && e.hasOwnProperty("addEventListener")) {
+              for (
+                var n = e.addEventListener;
+                n._rollbarOldAdd && n.belongsToShim;
+
+              )
+                n = n._rollbarOldAdd;
+              var t = function(e, o, t) {
+                n.call(this, e, r.wrap(o), t);
+              };
+              (t._rollbarOldAdd = n),
+                (t.belongsToShim = o),
+                (e.addEventListener = t);
+              for (
+                var a = e.removeEventListener;
+                a._rollbarOldRemove && a.belongsToShim;
+
+              )
+                a = a._rollbarOldRemove;
+              var l = function(r, e, o) {
+                a.call(this, r, (e && e._rollbar_wrapped) || e, o);
+              };
+              (l._rollbarOldRemove = a),
+                (l.belongsToShim = o),
+                (e.removeEventListener = l);
+            }
+          }
+          r.exports = {
+            captureUncaughtExceptions: o,
+            captureUnhandledRejections: t,
+            wrapGlobals: a,
+          };
+        },
+        function(r, e) {
+          "use strict";
+          function o(r, e) {
+            (this.impl = r(e, this)), (this.options = e), n(o.prototype);
+          }
+          function n(r) {
+            for (
+              var e = function(r) {
+                  return function() {
+                    var e = Array.prototype.slice.call(arguments, 0);
+                    if (this.impl[r]) return this.impl[r].apply(this.impl, e);
+                  };
+                },
+                o = "log,debug,info,warn,warning,error,critical,global,configure,handleUncaughtException,handleUnhandledRejection,_createItem,wrap,loadFull,shimId,captureEvent,captureDomContentLoaded,captureLoad".split(
+                  ",",
+                ),
+                n = 0;
+              n < o.length;
+              n++
+            )
+              r[o[n]] = e(o[n]);
+          }
+          (o.prototype._swapAndProcessMessages = function(r, e) {
+            this.impl = r(this.options);
+            for (var o, n, t; (o = e.shift()); )
+              (n = o.method),
+                (t = o.args),
+                this[n] &&
+                  "function" == typeof this[n] &&
+                  ("captureDomContentLoaded" === n || "captureLoad" === n
+                    ? this[n].apply(this, [t[0], o.ts])
+                    : this[n].apply(this, t));
+            return this;
+          }),
+            (r.exports = o);
+        },
+        function(r, e) {
+          "use strict";
+          r.exports = function(r) {
+            return function(e) {
+              if (!e && !window._rollbarInitialized) {
+                r = r || {};
+                for (
+                  var o,
+                    n,
+                    t = r.globalAlias || "Rollbar",
+                    a = window.rollbar,
+                    l = function(r) {
+                      return new a(r);
+                    },
+                    i = 0;
+                  (o = window._rollbarShims[i++]);
+
+                )
+                  n || (n = o.handler),
+                    o.handler._swapAndProcessMessages(l, o.messages);
+                (window[t] = n), (window._rollbarInitialized = !0);
+              }
+            };
+          };
+        },
+      ]);
+      // End Rollbar Snippet
+    </script>
+    <!-- Clevertap -->
+    <script type="text/javascript">
+      var clevertap = {
+        event: [],
+        profile: [],
+        account: [],
+        onUserLogin: [],
+        notifications: [],
+      };
+      // replace with the CLEVERTAP_ACCOUNT_ID with the actual ACCOUNT ID value from your Dashboard -> Settings page
+      clevertap.account.push({ id: "664-4ZR-7Z5Z" });
+      (function() {
+        var wzrk = document.createElement("script");
+        wzrk.type = "text/javascript";
+        wzrk.async = true;
+        wzrk.src =
+          ("https:" == document.location.protocol
+            ? "https://d2r1yp2w7bby2u.cloudfront.net"
+            : "http://static.clevertap.com") + "/js/a.js";
+        var s = document.getElementsByTagName("script")[0];
+        s.parentNode.insertBefore(wzrk, s);
+      })();
+    </script>
+
+    <!--
+      Notice the use of %PUBLIC_URL% in the tags above.
+      It will be replaced with the URL of the `public` folder during the build.
+      Only files inside the `public` folder can be referenced from the HTML.
+
+      Unlike "/favicon.ico" or "favicon.ico", "%PUBLIC_URL%/favicon.ico" will
+      work correctly both with client-side routing and a non-root public URL.
+      Learn how to configure a non-root public URL by running `npm run build`.
+    -->
+    <title>Home | Classplus-Quiz</title>
+  <link href="./Home _ Classplus-Quiz_files/app.941a16db76ea94b8a470.style.css" rel="stylesheet"><style type="text/css">.MathJax_Hover_Frame {border-radius: .25em; -webkit-border-radius: .25em; -moz-border-radius: .25em; -khtml-border-radius: .25em; box-shadow: 0px 0px 15px #83A; -webkit-box-shadow: 0px 0px 15px #83A; -moz-box-shadow: 0px 0px 15px #83A; -khtml-box-shadow: 0px 0px 15px #83A; border: 1px solid #A6D ! important; display: inline-block; position: absolute}
+.MathJax_Menu_Button .MathJax_Hover_Arrow {position: absolute; cursor: pointer; display: inline-block; border: 2px solid #AAA; border-radius: 4px; -webkit-border-radius: 4px; -moz-border-radius: 4px; -khtml-border-radius: 4px; font-family: 'Courier New',Courier; font-size: 9px; color: #F0F0F0}
+.MathJax_Menu_Button .MathJax_Hover_Arrow span {display: block; background-color: #AAA; border: 1px solid; border-radius: 3px; line-height: 0; padding: 4px}
+.MathJax_Hover_Arrow:hover {color: white!important; border: 2px solid #CCC!important}
+.MathJax_Hover_Arrow:hover span {background-color: #CCC!important}
+</style><style type="text/css">#MathJax_About {position: fixed; left: 50%; width: auto; text-align: center; border: 3px outset; padding: 1em 2em; background-color: #DDDDDD; color: black; cursor: default; font-family: message-box; font-size: 120%; font-style: normal; text-indent: 0; text-transform: none; line-height: normal; letter-spacing: normal; word-spacing: normal; word-wrap: normal; white-space: nowrap; float: none; z-index: 201; border-radius: 15px; -webkit-border-radius: 15px; -moz-border-radius: 15px; -khtml-border-radius: 15px; box-shadow: 0px 10px 20px #808080; -webkit-box-shadow: 0px 10px 20px #808080; -moz-box-shadow: 0px 10px 20px #808080; -khtml-box-shadow: 0px 10px 20px #808080; filter: progid:DXImageTransform.Microsoft.dropshadow(OffX=2, OffY=2, Color='gray', Positive='true')}
+#MathJax_About.MathJax_MousePost {outline: none}
+.MathJax_Menu {position: absolute; background-color: white; color: black; width: auto; padding: 2px; border: 1px solid #CCCCCC; margin: 0; cursor: default; font: menu; text-align: left; text-indent: 0; text-transform: none; line-height: normal; letter-spacing: normal; word-spacing: normal; word-wrap: normal; white-space: nowrap; float: none; z-index: 201; box-shadow: 0px 10px 20px #808080; -webkit-box-shadow: 0px 10px 20px #808080; -moz-box-shadow: 0px 10px 20px #808080; -khtml-box-shadow: 0px 10px 20px #808080; filter: progid:DXImageTransform.Microsoft.dropshadow(OffX=2, OffY=2, Color='gray', Positive='true')}
+.MathJax_MenuItem {padding: 2px 2em; background: transparent}
+.MathJax_MenuArrow {position: absolute; right: .5em; padding-top: .25em; color: #666666; font-size: .75em}
+.MathJax_MenuActive .MathJax_MenuArrow {color: white}
+.MathJax_MenuArrow.RTL {left: .5em; right: auto}
+.MathJax_MenuCheck {position: absolute; left: .7em}
+.MathJax_MenuCheck.RTL {right: .7em; left: auto}
+.MathJax_MenuRadioCheck {position: absolute; left: 1em}
+.MathJax_MenuRadioCheck.RTL {right: 1em; left: auto}
+.MathJax_MenuLabel {padding: 2px 2em 4px 1.33em; font-style: italic}
+.MathJax_MenuRule {border-top: 1px solid #CCCCCC; margin: 4px 1px 0px}
+.MathJax_MenuDisabled {color: GrayText}
+.MathJax_MenuActive {background-color: Highlight; color: HighlightText}
+.MathJax_MenuDisabled:focus, .MathJax_MenuLabel:focus {background-color: #E8E8E8}
+.MathJax_ContextMenu:focus {outline: none}
+.MathJax_ContextMenu .MathJax_MenuItem:focus {outline: none}
+#MathJax_AboutClose {top: .2em; right: .2em}
+.MathJax_Menu .MathJax_MenuClose {top: -10px; left: -10px}
+.MathJax_MenuClose {position: absolute; cursor: pointer; display: inline-block; border: 2px solid #AAA; border-radius: 18px; -webkit-border-radius: 18px; -moz-border-radius: 18px; -khtml-border-radius: 18px; font-family: 'Courier New',Courier; font-size: 24px; color: #F0F0F0}
+.MathJax_MenuClose span {display: block; background-color: #AAA; border: 1.5px solid; border-radius: 18px; -webkit-border-radius: 18px; -moz-border-radius: 18px; -khtml-border-radius: 18px; line-height: 0; padding: 8px 0 6px}
+.MathJax_MenuClose:hover {color: white!important; border: 2px solid #CCC!important}
+.MathJax_MenuClose:hover span {background-color: #CCC!important}
+.MathJax_MenuClose:hover:focus {outline: none}
+</style><style type="text/css">.MathJax_Preview .MJXf-math {color: inherit!important}
+</style><style type="text/css">.MJX_Assistive_MathML {position: absolute!important; top: 0; left: 0; clip: rect(1px, 1px, 1px, 1px); padding: 1px 0 0 0!important; border: 0!important; height: 1px!important; width: 1px!important; overflow: hidden!important; display: block!important; -webkit-touch-callout: none; -webkit-user-select: none; -khtml-user-select: none; -moz-user-select: none; -ms-user-select: none; user-select: none}
+.MJX_Assistive_MathML.MJX_Assistive_MathML_Block {width: 100%!important}
+</style><style type="text/css">#MathJax_Zoom {position: absolute; background-color: #F0F0F0; overflow: auto; display: block; z-index: 301; padding: .5em; border: 1px solid black; margin: 0; font-weight: normal; font-style: normal; text-align: left; text-indent: 0; text-transform: none; line-height: normal; letter-spacing: normal; word-spacing: normal; word-wrap: normal; white-space: nowrap; float: none; -webkit-box-sizing: content-box; -moz-box-sizing: content-box; box-sizing: content-box; box-shadow: 5px 5px 15px #AAAAAA; -webkit-box-shadow: 5px 5px 15px #AAAAAA; -moz-box-shadow: 5px 5px 15px #AAAAAA; -khtml-box-shadow: 5px 5px 15px #AAAAAA; filter: progid:DXImageTransform.Microsoft.dropshadow(OffX=2, OffY=2, Color='gray', Positive='true')}
+#MathJax_ZoomOverlay {position: absolute; left: 0; top: 0; z-index: 300; display: inline-block; width: 100%; height: 100%; border: 0; padding: 0; margin: 0; background-color: white; opacity: 0; filter: alpha(opacity=0)}
+#MathJax_ZoomFrame {position: relative; display: inline-block; height: 0; width: 0}
+#MathJax_ZoomEventTrap {position: absolute; left: 0; top: 0; z-index: 302; display: inline-block; border: 0; padding: 0; margin: 0; background-color: white; opacity: 0; filter: alpha(opacity=0)}
+</style><style type="text/css">.MathJax_Preview {color: #888}
+#MathJax_Message {position: fixed; left: 1em; bottom: 1.5em; background-color: #E6E6E6; border: 1px solid #959595; margin: 0px; padding: 2px 8px; z-index: 102; color: black; font-size: 80%; width: auto; white-space: nowrap}
+#MathJax_MSIE_Frame {position: absolute; top: 0; left: 0; width: 0px; z-index: 101; border: 0px; margin: 0px; padding: 0px}
+.MathJax_Error {color: #CC0000; font-style: italic}
+</style><script type="text/javascript" src="./Home _ Classplus-Quiz_files/a" rel="nofollow" async=""></script><script type="text/javascript" charset="utf-8" async="" src="./Home _ Classplus-Quiz_files/2.b02f43ca175c1d421c75.bundle.js.download"></script><style type="text/css">.MJXp-script {font-size: .8em}
+.MJXp-right {-webkit-transform-origin: right; -moz-transform-origin: right; -ms-transform-origin: right; -o-transform-origin: right; transform-origin: right}
+.MJXp-bold {font-weight: bold}
+.MJXp-italic {font-style: italic}
+.MJXp-scr {font-family: MathJax_Script,'Times New Roman',Times,STIXGeneral,serif}
+.MJXp-frak {font-family: MathJax_Fraktur,'Times New Roman',Times,STIXGeneral,serif}
+.MJXp-sf {font-family: MathJax_SansSerif,'Times New Roman',Times,STIXGeneral,serif}
+.MJXp-cal {font-family: MathJax_Caligraphic,'Times New Roman',Times,STIXGeneral,serif}
+.MJXp-mono {font-family: MathJax_Typewriter,'Times New Roman',Times,STIXGeneral,serif}
+.MJXp-largeop {font-size: 150%}
+.MJXp-largeop.MJXp-int {vertical-align: -.2em}
+.MJXp-math {display: inline-block; line-height: 1.2; text-indent: 0; font-family: 'Times New Roman',Times,STIXGeneral,serif; white-space: nowrap; border-collapse: collapse}
+.MJXp-display {display: block; text-align: center; margin: 1em 0}
+.MJXp-math span {display: inline-block}
+.MJXp-box {display: block!important; text-align: center}
+.MJXp-box:after {content: " "}
+.MJXp-rule {display: block!important; margin-top: .1em}
+.MJXp-char {display: block!important}
+.MJXp-mo {margin: 0 .15em}
+.MJXp-mfrac {margin: 0 .125em; vertical-align: .25em}
+.MJXp-denom {display: inline-table!important; width: 100%}
+.MJXp-denom > * {display: table-row!important}
+.MJXp-surd {vertical-align: top}
+.MJXp-surd > * {display: block!important}
+.MJXp-script-box > *  {display: table!important; height: 50%}
+.MJXp-script-box > * > * {display: table-cell!important; vertical-align: top}
+.MJXp-script-box > *:last-child > * {vertical-align: bottom}
+.MJXp-script-box > * > * > * {display: block!important}
+.MJXp-mphantom {visibility: hidden}
+.MJXp-munderover {display: inline-table!important}
+.MJXp-over {display: inline-block!important; text-align: center}
+.MJXp-over > * {display: block!important}
+.MJXp-munderover > * {display: table-row!important}
+.MJXp-mtable {vertical-align: .25em; margin: 0 .125em}
+.MJXp-mtable > * {display: inline-table!important; vertical-align: middle}
+.MJXp-mtr {display: table-row!important}
+.MJXp-mtd {display: table-cell!important; text-align: center; padding: .5em 0 0 .5em}
+.MJXp-mtr > .MJXp-mtd:first-child {padding-left: 0}
+.MJXp-mtr:first-child > .MJXp-mtd {padding-top: 0}
+.MJXp-mlabeledtr {display: table-row!important}
+.MJXp-mlabeledtr > .MJXp-mtd:first-child {padding-left: 0}
+.MJXp-mlabeledtr:first-child > .MJXp-mtd {padding-top: 0}
+.MJXp-merror {background-color: #FFFF88; color: #CC0000; border: 1px solid #CC0000; padding: 1px 3px; font-style: normal; font-size: 90%}
+.MJXp-scale0 {-webkit-transform: scaleX(.0); -moz-transform: scaleX(.0); -ms-transform: scaleX(.0); -o-transform: scaleX(.0); transform: scaleX(.0)}
+.MJXp-scale1 {-webkit-transform: scaleX(.1); -moz-transform: scaleX(.1); -ms-transform: scaleX(.1); -o-transform: scaleX(.1); transform: scaleX(.1)}
+.MJXp-scale2 {-webkit-transform: scaleX(.2); -moz-transform: scaleX(.2); -ms-transform: scaleX(.2); -o-transform: scaleX(.2); transform: scaleX(.2)}
+.MJXp-scale3 {-webkit-transform: scaleX(.3); -moz-transform: scaleX(.3); -ms-transform: scaleX(.3); -o-transform: scaleX(.3); transform: scaleX(.3)}
+.MJXp-scale4 {-webkit-transform: scaleX(.4); -moz-transform: scaleX(.4); -ms-transform: scaleX(.4); -o-transform: scaleX(.4); transform: scaleX(.4)}
+.MJXp-scale5 {-webkit-transform: scaleX(.5); -moz-transform: scaleX(.5); -ms-transform: scaleX(.5); -o-transform: scaleX(.5); transform: scaleX(.5)}
+.MJXp-scale6 {-webkit-transform: scaleX(.6); -moz-transform: scaleX(.6); -ms-transform: scaleX(.6); -o-transform: scaleX(.6); transform: scaleX(.6)}
+.MJXp-scale7 {-webkit-transform: scaleX(.7); -moz-transform: scaleX(.7); -ms-transform: scaleX(.7); -o-transform: scaleX(.7); transform: scaleX(.7)}
+.MJXp-scale8 {-webkit-transform: scaleX(.8); -moz-transform: scaleX(.8); -ms-transform: scaleX(.8); -o-transform: scaleX(.8); transform: scaleX(.8)}
+.MJXp-scale9 {-webkit-transform: scaleX(.9); -moz-transform: scaleX(.9); -ms-transform: scaleX(.9); -o-transform: scaleX(.9); transform: scaleX(.9)}
+.MathJax_PHTML .noError {vertical-align: ; font-size: 90%; text-align: left; color: black; padding: 1px 3px; border: 1px solid}
+</style><style data-emotion=""></style><script type="text/javascript" src="./Home _ Classplus-Quiz_files/a(1)" rel="nofollow" async=""></script><script type="text/javascript" src="./Home _ Classplus-Quiz_files/a(2)" rel="nofollow" async=""></script><script type="text/javascript" charset="utf-8" async="" src="./Home _ Classplus-Quiz_files/1.83321fbebfcbc8b15708.bundle.js.download"></script><script type="text/javascript" src="./Home _ Classplus-Quiz_files/a(3)" rel="nofollow" async=""></script><script type="text/javascript" src="./Home _ Classplus-Quiz_files/a(4)" rel="nofollow" async=""></script><script type="text/javascript" src="./Home _ Classplus-Quiz_files/a(5)" rel="nofollow" async=""></script><script type="text/javascript" src="./Home _ Classplus-Quiz_files/a(6)" rel="nofollow" async=""></script><script type="text/javascript" src="./Home _ Classplus-Quiz_files/a(7)" rel="nofollow" async=""></script></head>
+  <body class="" style="background-color: rgb(245, 245, 245);"><div id="MathJax_Message" style="display: none;"></div>
+    <noscript>
+      You need to enable JavaScript to run this app.
+    </noscript>
+
+    <div id="root"><div class="app"><div><div class="navBarBackground navbar-fixed-top cmsnav jC-sb aC"><div style="cursor: pointer;"><img src="./Home _ Classplus-Quiz_files/quiz_logo.png" class="imageStyle"></div><div class="flexRow mR-5"><div class="flexRow"><div class="navItemStyle"><button type="submit" class="btn--color btn btn-lg btn-primary">New Test</button></div><li class="dropDownStyle dropdown"><a id="basic-nav-dropdown" role="button" class="dropdown-toggle" aria-haspopup="true" aria-expanded="false" href="https://cms.classplusapp.com/#">Jeevesh <span class="caret"></span></a><ul role="menu" class="dropdown-menu" aria-labelledby="basic-nav-dropdown"><li role="presentation" class=""><a role="menuitem" tabindex="-1" href="https://cms.classplusapp.com/#">Change password</a></li><li role="separator" class="divider"></li><li role="presentation" class=""><a role="menuitem" tabindex="-1" href="https://cms.classplusapp.com/#">Logout</a></li></ul></li></div></div></div><div class="formGroup--testList form-group"><div class="test_list_search_row row"><div class="padding-0 col-lg-2 col-md-2 col-sm-2"><div class="dropdown btn-group btn-group-lg btn-group-primary"><button id="dropdown-wlibrary" role="button" aria-haspopup="true" aria-expanded="false" type="button" class="tutor_switch_button btn--color btn--testList dropdown-toggle btn btn-lg btn-primary">My Library <span class="caret"></span></button><ul role="menu" class="dropdown-menu" aria-labelledby="dropdown-wlibrary"><li role="presentation" class="active"><a role="menuitem" tabindex="-1" href="https://cms.classplusapp.com/#">My Library</a></li></ul></div></div><div class="padding-0 col-lg-10 col-md-10 col-sm-10"><input autocomplete="off" placeholder="Search By Name (Minimum 3 characters)" type="text" id="formControlsSelect" class="test_list_search form-control" value=""></div></div><div class="sort_row row"><div class="padding-0 col-lg-6 col-md-6 col-sm-6"><button id="title" type="button" class="sort_button btn btn-xs btn-default">Title<img id="title" src="./Home _ Classplus-Quiz_files/descending_order.png" class=""></button></div><div class="padding-0 col-lg-6 col-md-6 col-sm-6"><button id="Last Modified" type="button" class="sort_button float_right btn btn-xs btn-default">Last Modified<img id="Last Modified" src="./Home _ Classplus-Quiz_files/descending_order.png" class=""></button></div></div></div><div class="single_test_row row"><div><div class="infinite-scroll-component" style="height: auto; margin-top: 14em;"><div class="parentRow--singleTest row"><div class="list parentPanel--singleTest panel panel-default"><div class="row1--singleTest row"><div class="col1--singleTest col-lg-9 col-md-9 col-sm-9"><img src="./Home _ Classplus-Quiz_files/exam.svg" class="img--singleTest">General Knowledge</div><div class="col2--singleTest col-lg-2 col-md-2 col-sm-2">28 Jun 2019</div></div><div class="actions row2--singleTest display-before row"><span><a class="span--singleTest a--color">Copy Test</a></span><span class="vl"></span><span><a class="span--singleTest">Link to Batch</a></span><span class="vl"></span><span><a class="span--singleTest">Delete</a></span></div></div></div><div class="parentRow--singleTest row"><div class="list parentPanel--singleTest panel panel-default"><div class="row1--singleTest row"><div class="col1--singleTest col-lg-9 col-md-9 col-sm-9"><img src="./Home _ Classplus-Quiz_files/exam.svg" class="img--singleTest">NEET TEST PAPER</div><div class="col2--singleTest col-lg-2 col-md-2 col-sm-2">09 Apr 2019</div></div><div class="actions row2--singleTest display-before row"><span><a class="span--singleTest a--color">Copy Test</a></span><span class="vl"></span><span><a class="span--singleTest">Link to Batch</a></span><span class="vl"></span><span><a class="span--singleTest">Delete</a></span></div></div></div><div class="parentRow--singleTest row"><div class="list parentPanel--singleTest panel panel-default"><div class="row1--singleTest row"><div class="col1--singleTest col-lg-9 col-md-9 col-sm-9"><img src="./Home _ Classplus-Quiz_files/exam.svg" class="img--singleTest">product_test-2 (Main)</div><div class="col2--singleTest col-lg-2 col-md-2 col-sm-2">19 Jun 2019</div></div><div class="actions row2--singleTest display-before row"><span><a class="span--singleTest a--color">Copy Test</a></span><span class="vl"></span><span><a class="span--singleTest">Link to Batch</a></span><span class="vl"></span><span><a class="span--singleTest">Delete</a></span></div></div></div><div class="parentRow--singleTest row"><div class="list parentPanel--singleTest panel panel-default"><div class="row1--singleTest row"><div class="col1--singleTest col-lg-9 col-md-9 col-sm-9"><img src="./Home _ Classplus-Quiz_files/exam.svg" class="img--singleTest">test paper</div><div class="col2--singleTest col-lg-2 col-md-2 col-sm-2">20 Jun 2019</div></div><div class="actions row2--singleTest display-before row"><span><a class="span--singleTest a--color">Copy Test</a></span><span class="vl"></span><span><a class="span--singleTest">Link to Batch</a></span><span class="vl"></span><span><a class="span--singleTest">Delete</a></span></div></div></div><div class="parentRow--singleTest row"><div class="list parentPanel--singleTest panel panel-default"><div class="row1--singleTest row"><div class="col1--singleTest col-lg-9 col-md-9 col-sm-9"><img src="./Home _ Classplus-Quiz_files/exam.svg" class="img--singleTest">ytgfkjsdyaj</div><div class="col2--singleTest col-lg-2 col-md-2 col-sm-2">18 Jun 2019</div></div><div class="actions row2--singleTest display-before row"><span><a class="span--singleTest a--color">Copy Test</a></span><span class="vl"></span><span><a class="span--singleTest">Link to Batch</a></span><span class="vl"></span><span><a class="span--singleTest">Delete</a></span></div></div></div></div></div></div></div><span class="redux-toastr" aria-live="assertive"><span><div class="top-left"></div><div class="top-right"></div><div class="top-center"></div><div class="bottom-left"></div><div class="bottom-right"></div><div class="bottom-center"></div></span></span></div></div>
+    <!--
+      This HTML file is a template.
+      If you open it directly in the browser, you will see an empty page.
+
+      You can add webfonts, meta tags, or analytics to this file.
+      The build step will place the bundled scripts into the <body> tag.
+
+      To begin the development, run `npm start` or `yarn start`.
+      To create a production bundle, use `npm run build` or `yarn build`.
+    -->
+    <!-- <script src="https://s3.ap-south-1.amazonaws.com/classplus-tinymce/tinymce/tinymce.min.js" type="text/JavaScript" ></script> -->
+  <script type="text/javascript" src="./Home _ Classplus-Quiz_files/runtime.0a0be9ff195c796a4fc9.bundle.js.download"></script><script type="text/javascript" src="./Home _ Classplus-Quiz_files/vendor.b4b58e627f7b58a40124.bundle.js.download"></script><script type="text/javascript" src="./Home _ Classplus-Quiz_files/app.941a16db76ea94b8a470.bundle.js.download"></script>
+
+<iframe frameborder="0" scrolling="no" style="background-color: transparent; border: 0px; display: none;" src="./Home _ Classplus-Quiz_files/saved_resource.html"></iframe><div id="GOOGLE_INPUT_CHEXT_FLAG" input="" input_stat="{&quot;tlang&quot;:true,&quot;tsbc&quot;:true,&quot;pun&quot;:true,&quot;mk&quot;:true,&quot;ss&quot;:true}" style="display: none;"></div><img src="./Home _ Classplus-Quiz_files/click.php"><div id="des_xnba_ewn"></div></body></html>
