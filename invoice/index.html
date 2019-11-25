@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta
+      charset="utf-8"
+      name="viewport"
+      content="width=device-width, initial-scale=1"
+    />
+    <title>Invoice</title>
+    <style>
+      table {
+        border-collapse: collapse;
+      }
+      .container {
+        width: 100%;
+        height: 100%;
+        overflow-y: scroll;
+        padding: 24px 0;
+        background: #ffffff;
+        text-align: center;
+        align-items: center;
+        font-family: "Lato", sans-serif;
+        font-size: 14px;
+      }
+
+      .invoice {
+        width: 595px;
+        /* height: 902px; */
+        margin: auto;
+        padding: 24px;
+        background: #ffffff;
+        color: #212121;
+        font-family: "Lato", sans-serif;
+      }
+
+      .upperTable {
+        width: 100%;
+      }
+
+      .upperLeft {
+        float: left;
+      }
+
+      .upperRight {
+        float: right;
+      }
+
+      .lowerTable {
+        width: 100%;
+        margin-top: 12px;
+        border-bottom: 1px solid #e5e5e5;
+      }
+
+      .lowerTableHeading {
+        margin: 24px 0 0 0;
+        padding: 2px;
+        background: rgba(0, 154, 224, 0.1);
+        font-size: 12px;
+        line-height: 16px;
+        font-weight: bold;
+      }
+
+      .lowerTableHeading th {
+        padding: 16px;
+        font-weight: bold;
+      }
+
+      .lowerTableContentHeading td {
+        padding: 8px;
+        font-size: 12px;
+        line-height: 16px;
+        font-weight: bold;
+      }
+
+      .lowerLeft {
+        float: left;
+      }
+
+      .lowerRight {
+        float: right;
+      }
+
+      .amountBackground {
+        background: rgba(187, 187, 187, 0.1);
+      }
+
+      .notes {
+        width: 100%;
+        border-top: 1px solid #e5e5e5;
+        padding-top: 16px;
+        width: 100%;
+      }
+
+      .footer {
+        width: 100%;
+        text-align: center;
+        align-items: center;
+        margin-top: 50px;
+      }
+    </style>
+    <meta name="viewport" content="width=device-width, user-scalable=no" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Lato&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+
+  <body style="margin:0">
+    <div class="container">
+      <div class="invoice">
+        <table class="upperTable">
+          <tr>
+            <td class="upperLeft">Steller Academy</td>
+            <td class="upperRight">
+              <div style="width:150px">
+                <img
+                  src="./invoice.svg"
+                  style="max-width: 100%;height: 50px;float:right"
+                />
+              </div>
+            </td>
+          </tr>
+          <tr>
+            <td class="upperLeft" style="text-align: left;width:250px;">
+              1st Floor , Pioneer House , Sector 16,Noida,Gautam Buddh Nagar,
+              Uttar Pradesh ,201301
+            </td>
+          </tr>
+          <tr>
+            <td class="upperLeft">9981009300</td>
+          </tr>
+
+          <tr>
+            <td class="upperLeft">GSTIN 029DFF3989Z1</td>
+            <td class="upperRight" style="font-size:24px;">
+              INVOICE
+            </td>
+          </tr>
+          <tr>
+            <td class="upperLeft">Payment Method: Online</td>
+            <td class="upperRight">
+              Invoice # : Stelar-19-209
+            </td>
+          </tr>
+          <tr>
+            <td class="upperLeft">Valid through :24/01/2020</td>
+            <td class="upperRight">
+              Invoice Date : 20/09/2019
+            </td>
+          </tr>
+          <tr>
+            <td class="upperLeft">stellerAcademy@gmail.com</td>
+            <td class="upperRight">
+              Bill to :
+            </td>
+          </tr>
+          <tr>
+            <td class="upperRight">
+              Gunjan Gupta
+            </td>
+          </tr>
+          <tr>
+            <td class="upperRight">
+              83938939839
+            </td>
+          </tr>
+          <tr>
+            <td class="upperRight">
+              gunjangupta@gmail.com
+            </td>
+          </tr>
+        </table>
+
+        <table class="lowerTable">
+          <tr class="lowerTableHeading">
+            <th class="lowerLeft">
+              #&nbsp;&nbsp;&nbsp;&nbsp;Item & Description
+            </th>
+            <th class="lowerRight">
+              Amount
+            </th>
+          </tr>
+          <tr class="lowerTableContentHeading">
+            <td class="lowerLeft">
+              1.&nbsp;&nbsp;&nbsp;&nbsp; Course Fees : JEE Mains Rankers Course
+            </td>
+
+            <td class="lowerRight">
+              6500
+            </td>
+          </tr>
+        </table>
+
+        <table style="width:100%;">
+          <tr class="lowerTableContentHeading">
+            <td class="lowerLeft">
+              Sub Total
+            </td>
+            <td class="lowerRight">
+              6500
+            </td>
+          </tr>
+
+          <tr class="lowerTableContentHeading">
+            <td class="lowerLeft">
+              Discount (10%)
+            </td>
+            <td class="lowerRight">
+              -(650)
+            </td>
+          </tr>
+
+          <tr class="lowerTableContentHeading">
+            <td class="lowerLeft">
+              CGST (10%)
+            </td>
+            <td class="lowerRight">
+              650
+            </td>
+          </tr>
+          <tr class="lowerTableContentHeading">
+            <td class="lowerLeft">
+              SGST (0%)
+            </td>
+            <td class="lowerRight">
+              0
+            </td>
+          </tr>
+          <tr class="lowerTableContentHeading">
+            <td class="lowerLeft">
+              Rounding
+            </td>
+            <td class="lowerRight">
+              0
+            </td>
+          </tr>
+          <tr class="lowerTableContentHeading">
+            <td class="lowerLeft">
+              Internet Handling Fees
+            </td>
+            <td class="lowerRight">
+              0
+            </td>
+          </tr>
+          <tr class="lowerTableContentHeading">
+            <td class="lowerLeft">
+              Total
+            </td>
+            <td class="lowerRight">
+              6500
+            </td>
+          </tr>
+          <tr class="lowerTableContentHeading amountBackground">
+            <td class="lowerLeft ">
+              Amount Recieved
+            </td>
+            <td class="lowerRight">
+              6500
+            </td>
+          </tr>
+          <tr class="lowerTableContentHeading">
+            <td class="lowerLeft">
+              Amount Recieved in Words :
+            </td>
+            <td class="lowerRight">
+              Rupee Six Thounsand Five Hundred Only
+            </td>
+          </tr>
+        </table>
+
+        <table class="notes">
+          <tr>
+            <td class="lowerLeft">Notes:</td>
+          </tr>
+          <!-- <tr >
+                       <td style="text-align: center;">
+                             This is a computer generated pay receipt ,does not require signature
+                       </td>
+                    </tr> -->
+        </table>
+      </div>
+    </div>
+  </body>
+
+  <footer>
+    <div class="footer">
+      This is a computer generated pay receipt ,does not require signature
+    </div>
+    <!-- Manual Script -->
+
+    <script type="text/javascript"></script>
+    <!-- Manual Script end -->
+  </footer>
+</html>
