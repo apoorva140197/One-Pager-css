@@ -1,0 +1,142 @@
+.App {
+   margin:0 auto;
+   width:100%;
+   background: #f7f8fa;
+   position: relative;
+}
+
+.ErrorContainer {
+  position: absolute;
+    top: 0%;
+    margin: auto;
+    width: 100%;
+    padding: 20px;
+    font-size: 18px;
+    color: white;
+    background: #ff901d;
+    box-sizing: border-box;
+}
+
+
+
+.ErrorContainer button.Close {
+  padding: 8px;
+    right: 0%;
+    top: 0%;
+    position: absolute;
+    font-size: 28px;
+    cursor: pointer;
+    color: white;
+    background: transparent;
+    border: none;
+    user-select: none;
+    -webkit-user-select: none;
+    outline: none;
+}
+
+.Container{
+  
+    margin: 0 8%;
+    padding:40px;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+}
+
+/* .App-header {
+ 
+  min-height: 100vh;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  color: white;
+} */
+
+.MainPanel{
+  width:63%;
+  /* height: 298px; */
+ 
+}
+
+.SidePanel{
+  width:36%;
+  /* height: 298px; */
+  margin: 0 2%;
+  
+
+}
+
+
+input[type="checkbox"] {
+    height: 14px;
+    outline: none;
+    cursor: pointer;
+    -webkit-appearance: none;
+    background-color: #fafafa;
+    border: 1px solid #cacece;
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.05),
+        inset 0px -15px 10px -12px rgba(0, 0, 0, 0.05);
+    padding: 6px;
+    border-radius: 50%;
+    display: inline-block;
+    position: relative;
+}
+
+input[type="checkbox"]:active,
+input[type="checkbox"]:checked:active {
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.05),
+        inset 0px 1px 3px rgba(0, 0, 0, 0.1);
+}
+
+input[type="checkbox"]:checked {
+    background-color: #ffffff;
+    border: 1px solid #ffffff;
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.05),
+        inset 0px -15px 10px -12px rgba(0, 0, 0, 0.05),
+        inset 15px 10px -12px rgba(255, 255, 255, 0.1);
+    color: #1FB7FC;
+}
+
+input[type="checkbox"]:checked:after {
+    content: "\2714";
+    font-size: 8px;
+    position: absolute;
+    top: 0px;
+    left: 3px;
+    color: #1FB7FC;
+}
+
+input[type="checkbox"][disabled]{
+    background-color: #fff;
+    border-color: #e7e7e7;
+}
+
+input[type="checkbox"][disabled]:checked:after{
+    color: #1FB7FC;
+}
+
+@media(max-width:1100px){
+ .Container{
+   flex-direction: column;
+   margin: 0;
+   padding: 0;
+   
+ }
+
+.MainPanel{
+  width:100%;
+ 
+}
+
+.SidePanel{
+  width:100%;
+  margin:0;
+  
+
+}
+
+}
+
+
+

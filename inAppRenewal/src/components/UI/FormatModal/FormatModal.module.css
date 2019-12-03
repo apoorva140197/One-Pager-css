@@ -1,0 +1,65 @@
+.FormatModal .Title {
+  width: 100%;
+  height: auto;
+  opacity: 0.87;
+  /* text-align: center; */
+  /* padding: 4px 0px;
+  box-sizing: border-box; */
+  /* color: white; */
+}
+
+.FormatModal .Title p {
+  color: #000;
+  /* font-weight: bold; */
+  font-family: 'Lato',
+    sans-serif !important;
+  font-size: 20px;
+  margin: 0px;
+  padding: 1rem 0rem 2rem 1.7rem;
+  height: auto;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  width: 70%;
+}
+
+.FormatModal .Content {
+  /* padding: 16px; */
+
+  border-top: 1px solid #ccc;
+  margin: auto;
+  color: #1b1b1c;
+  font-size: 14px;
+  font-family: 'Lato',
+    sans-serif;
+  margin: auto;
+  color: #1b1b1c;
+  font-size: 14px;
+
+  font-family: 'Lato',
+    sans-serif;
+  max-height: calc(80vh - 2px);
+  overflow: auto;
+}
+
+.FormatModal .Title {
+  /* text-align: center; */
+  /* padding: 4px 0px;
+  box-sizing: border-box; */
+  /* color: white; */
+}
+
+@media(max-width:1100px) {
+  .FormatModal .Title p {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    width: 25rem;
+    font-size: 16px;
+  }
+
+  .FormatModal .Content {
+    max-height: calc(100vh - 100px);
+    max-height: calc(var(--vh, 1vh) * 100 - 100px);
+  }
+}

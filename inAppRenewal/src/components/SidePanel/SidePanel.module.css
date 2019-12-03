@@ -1,0 +1,320 @@
+.SideConatiner {
+  display: flex;
+  flex-flow: column;
+}
+
+.Upper {
+  background: #ffffff;
+  box-shadow: 0px 1px 4px rgba(0, 0, 0, 0.24);
+}
+
+.ApplyContainer {
+  display: flex;
+  flex-direction: row;
+
+  align-items: center;
+  background: rgba(0, 154, 224, 0.04);
+  height: 72px;
+  width: 100%;
+  /* background: #FFFFFF;
+box-shadow: 0px 1px 4px rgba(0, 0, 0, 0.24); */
+}
+
+.PromoSuccessContainer {
+  background: rgba(0, 154, 224, 0.04);
+  height: 72px;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.PromoSuccess {
+  padding-left: 10px;
+  font-size: 14px;
+  line-height: 17px;
+  color: rgba(0, 0, 0, 0.87);
+}
+
+.CloseImage {
+  display: flex;
+  padding-right: 10px;
+}
+
+.ApplyInput {
+  border-top: none;
+  border-left: none;
+  border-right: none;
+  border-bottom: 1.5px solid #999999;
+  background: inherit;
+  width: 70%;
+  height: 40px;
+  font-size: 14px;
+  margin-left: 16px;
+  user-select: none;
+  outline: none;
+}
+
+.ApplyBtn {
+  background: inherit;
+  border: none;
+  /* border-left:none;
+    border-right:none;
+    border-bottom: 1.5px solid #999999; */
+  outline: none;
+  user-select: none;
+  cursor: pointer;
+  font-size: 16px;
+  line-height: 19px;
+  color: #009ae0;
+  height: 40px;
+  padding-top: 10px;
+  padding-bottom: 31px;
+  width: 25%;
+  box-shadow: none;
+}
+
+.DisableApply {
+  background: inherit;
+  border: none;
+  /* border-left:none;
+    border-right:none;
+    border-bottom: 1.5px solid #999999; */
+  outline: none;
+  user-select: none;
+  cursor: not-allowed;
+  font-size: 16px;
+  line-height: 19px;
+  color: #999999;
+  height: 40px;
+  padding-top: 10px;
+  padding-bottom: 31px;
+  width: 25%;
+  box-shadow: none;
+}
+
+.Listing {
+  /* identical to box height */
+  display: flex;
+  flex-direction: column;
+  padding: 2px 0;
+  color: rgba(0, 0, 0, 0.6);
+  border-bottom: 1px solid #e5e5e5;
+}
+
+.Item {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 8px 16px 16px 16px;
+  font-size: 14px;
+  line-height: 17px;
+}
+
+.Gst {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start ;
+  padding:0 16px;
+ 
+}
+
+.Gst p{
+  margin: 0;
+    padding: 10px 0;
+    color: #000000;
+    font-weight: 600;
+    font-size: 14px;
+}
+
+.GstInput{
+   border: 2px solid rgba(0,0,0,0.2);
+    /* opacity: 0.4; */
+    font-size: 14px;
+    margin-bottom: 12px;
+    width: 92%;
+    height: 30px;
+    border-radius: 2px;
+    padding-left: 10px;
+    outline:none;
+    user-select: none;
+}
+
+.MultipliedAmount {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  padding: 12px 16px;
+  font-size: 14px;
+  line-height: 17px;
+}
+
+.ButtonContainerDesktop {
+  width: 100%;
+  height: 68px;
+  display: flex;
+  justify-content: center;
+}
+
+.ButtonContainerMobile {
+  width: 100%;
+  height: 68px;
+  display: none;
+  background: #ffffff;
+  box-shadow: 0px 1px 4px rgba(0, 0, 0, 0.24);
+  position: fixed;
+  bottom: 0;
+}
+
+.OkeyButton {
+  width: 350px;
+  max-width: 90%;
+  height: 44px;
+  /* margin: 12px 32px; */
+  background: #009ae0;
+  box-shadow: 0px 1px 4px rgba(0, 0, 0, 0.12);
+  border-radius: 4px;
+  -webkit-user-select: none;
+  user-select: none;
+  outline: none;
+  color: #ffffff;
+  font-size: 16px;
+  line-height: 22px;
+  text-align: center;
+  padding: 0 10px;
+  box-sizing: border-box;
+  margin: 3% 5%;
+  cursor: pointer;
+  border: none;
+}
+
+.DisableButton {
+  background: #999999;
+  border: #999999;
+  cursor: not-allowed;
+  width: 350px;
+  max-width: 90%;
+  height: 44px;
+  /* margin: 12px 32px; */
+  box-shadow: 0px 1px 4px rgba(0, 0, 0, 0.12);
+  border-radius: 4px;
+  -webkit-user-select: none;
+  user-select: none;
+  outline: none;
+  color: #ffffff;
+  font-size: 16px;
+  line-height: 22px;
+  text-align: center;
+  padding: 0 10px;
+  box-sizing: border-box;
+  margin: 3% 5%;
+  border: none;
+}
+
+.LowerMobileView {
+  display: none;
+}
+
+.TnC {
+  display: none;
+  margin: 16px 0 82px 0;
+  background: #ffffff;
+  box-shadow: 0px 1px 4px rgba(0, 0, 0, 0.24);
+  display: flex;
+  flex-direction: column;
+  padding: 16px;
+}
+
+.TnCText {
+  font-size: 14px;
+  line-height: 17px;
+  color: rgba(0, 0, 0, 0.6);
+  padding: 16px 0;
+}
+
+.SuccessModalContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 20px 0;
+}
+
+.SuccessModalEndDate {
+  font-size: 14px;
+  line-height: 20px;
+  text-align: center;
+  color: rgba(0, 0, 0, 0.6);
+  margin: 24px 0;
+}
+
+.SuccessModalOkButton {
+  background: #009ae0;
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.0350996);
+  border-radius: 5px;
+  width: 350px;
+  height: 48px;
+}
+
+.SuccessModalButtonText {
+  font-size: 16px;
+  line-height: 18px;
+  text-align: center;
+  letter-spacing: 1px;
+  color: #ffffff;
+}
+
+.ErrorContainer {
+  position: absolute;
+  top: 0%;
+  margin: auto;
+  width: 100%;
+  padding: 20px;
+  font-size: 18px;
+  color: white;
+  background: #ff901d;
+  box-sizing: border-box;
+}
+
+.ErrorContainer button.Close {
+  padding: 8px;
+  right: 0%;
+  top: 0%;
+  position: absolute;
+  font-size: 28px;
+  cursor: pointer;
+  color: white;
+  background: transparent;
+  border: none;
+  user-select: none;
+  -webkit-user-select: none;
+  outline: none;
+}
+
+@media (max-width: 1100px) {
+  .Upper {
+    margin-top: 16px;
+  }
+
+  .PromoSuccess {
+    padding-left: 15px;
+  }
+  .LowerMobileView {
+    display: inline;
+  }
+
+  .ButtonContainerDesktop {
+    display: none;
+  }
+
+  .ButtonContainerMobile {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .SideConatiner {
+    overflow-y: auto;
+  }
+}

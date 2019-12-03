@@ -1,0 +1,516 @@
+.MainContainer{
+display: flex;
+flex-direction: column;
+background: #FFFFFF;
+box-shadow: 0px 1px 5px rgba(172, 173, 175, 0.2), 0px 3px 4px rgba(172, 173, 175, 0.12), 0px 2px 4px rgba(172, 173, 175, 0.14);
+border-radius: 2px;
+
+}
+
+.CarouselDesktop{
+    display: inline;
+}
+
+.CarouselMobile{
+    display: none;
+}
+
+.MonthPlan{
+    margin:24px 0px;
+    display: flex;
+    flex-direction: column;
+    border-bottom: 1px solid #E5E5E5;
+    
+   
+}
+
+.CardContainer{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    overflow-x:auto;
+    margin:20px 0;
+    padding:20px 10px;
+}
+.Heading{
+    font-size: 18px;
+    line-height: 21px;
+    color: rgba(0, 0, 0, 0.87);
+    padding-left:20px;
+    font-weight: 500;
+
+}
+
+.HeadingText{
+    font-size: 14px;
+line-height: 17px;
+padding:10px 0 0 20px;
+color: rgba(0, 0, 0, 0.6);
+}
+
+.CardParent{
+    display: flex;
+    flex-direction: column;
+    background: #FFFFFF;
+    box-shadow: 0px 1px 5px rgba(172, 173, 175, 0.2), 0px 3px 4px rgba(172, 173, 175, 0.12), 0px 2px 4px rgba(172, 173, 175, 0.14);
+    border-radius: 8px;
+    width:144px;
+    height: 180px;
+    padding:0;
+    margin:0 15px;
+    cursor: pointer;
+    position: relative;
+    border:none;
+
+}
+
+.CardTag{
+    position: absolute;
+    top:-12px;
+    left:12px;
+    width: 112.67px;
+    height: 26px;
+    background: #FFFFFF;    
+    border: 1px solid #009AE0;
+    border-radius: 1100px;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+}
+
+.TagText{
+    font-size: 12px;
+    line-height: 14px;
+    color: #009AE0;
+    font-weight: 500;
+}
+
+.CardParentFocus{
+    display: flex;
+    flex-direction: column;
+    background: #FFFFFF;
+    box-shadow: 0px 1px 5px rgba(172, 173, 175, 0.2), 0px 3px 4px rgba(172, 173, 175, 0.12), 0px 2px 4px rgba(172, 173, 175, 0.14);
+    border-radius: 8px;
+    width:144px;
+    height: 180px;
+    padding:0;
+    margin:0 15px;
+    cursor: pointer;
+    position: relative;
+    transform: scale(1.092);
+    outline: none;
+    user-select: none;
+    border: 2px solid #009AE0;
+     
+}
+
+.CardParentMonthFocus{
+    display: flex;
+    width:139.5px;
+    padding:10px 0;
+    flex-direction: column;
+    background: linear-gradient(180deg, #61CEFF 0%, #0096DB 100%);
+    border-radius: 8px 8px 0px 0px;
+    height:55%;  
+}
+
+.CardParentMonth{
+    display: flex;
+    width:143px;
+    padding:10px 0;
+    flex-direction: column;
+    background: linear-gradient(180deg, #61CEFF 0%, #0096DB 100%);
+    border-radius: 8px 8px 0px 0px;
+    height:55%;
+    
+
+}
+
+.BuildMonth{
+    font-size: 10px;
+    line-height: 12px;  
+    padding:4px;
+    color: rgba(0, 0, 0, 0.6);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.ShowDecimal{
+    font-size: 13px;
+    margin-top:2px;
+    color: rgba(0, 0, 0, 0.6);
+    font-weight: 600;
+}
+
+.MonthNumber{
+    font-size: 40px;
+    line-height: 48px;
+    color: #FFFFFF;
+    padding-top:15px;
+}
+
+.MonthText{
+    font-size: 16px;
+    line-height: 19px;
+    color: #FFFFFF; 
+}
+
+.CardParentCost{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    height: 40%;
+    width:143px;
+
+}
+
+.CardCost{
+    font-size: 20px;
+    line-height: 24px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: rgba(0, 0, 0, 0.6);
+}
+
+.CustomizedPlan{
+    display: flex;
+    flex-direction: column;
+    
+}
+
+.CustomizedPlanText{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    font-size: 16px;
+    line-height: 19px;
+    color: rgba(0, 0, 0, 0.6);
+    padding:20px 0 0 20px;
+}
+
+.AddButtonContainer{
+    padding: 20px ;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+   
+}
+
+.AddButton{
+    width: 72px;
+    height: 40px;   
+    background:#FFFFFF;
+    border:none;
+    font-size: 16px;
+    line-height: 19px;  
+    color: rgba(0, 0, 0, 0.6);
+    cursor: pointer;
+    user-select: none;
+    width: 80px;
+    background: #F5F5F5;
+    border-radius: 60px;
+    margin: 0 20px 0 0;
+    border:none;
+    
+}
+.AddButtonFocus{
+    width: 72px;
+    height: 40px;
+    color: #FFFFFF;
+    border-radius: 60px;
+    outline: none;
+    border:none;
+    user-select: none;
+    font-size: 16px;
+    line-height: 19px;
+    cursor: pointer;
+    margin: 0 20px 0 0;
+    background: #1FB7FC;
+   
+}
+
+.CheckboxButtonContainer{
+    padding: 20px 20px 0 20px;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.CheckBoxLabel{
+    display: flex;
+    width:25%;
+    cursor: pointer;
+    justify-content: center;
+    align-items: center;
+    padding:20px 12px;
+    font-size: 16px;
+    line-height: 19px;
+    color: rgba(0, 0, 0, 0.6);
+    background: #F5F5F5;
+    border-radius: 8px;
+    margin-right:16px;
+    
+}
+
+.CheckBoxLabelFocus{
+    display: flex;
+    width:25%;
+    cursor: pointer;
+    justify-content: center;
+    align-items: center;
+    background: #1FB7FC;
+    border-radius: 8px;
+    padding: 20px 12px;
+    margin-right: 16px;
+
+}
+.CheckFocus{
+    font-size: 16px;
+line-height: 19px;
+/* identical to box height */
+
+text-align: center;
+letter-spacing: -0.5px;
+
+color: #FFFFFF;
+
+}
+
+.Check{
+    font-size: 16px;
+line-height: 19px;
+/* identical to box height */
+
+text-align: center;
+letter-spacing: -0.5px;
+
+color: rgba(0, 0, 0, 0.6);
+
+}
+.Checkbox{
+   
+margin-right:10px;
+}
+
+
+.TnC{
+    margin: 16px 0 ;
+    background: #FFFFFF;
+    box-shadow: 0px 1px 4px rgba(0, 0, 0, 0.24);
+    display: flex;
+    flex-direction: column;
+    padding:20px 8px;
+}
+
+.TnCText{
+    font-size: 14px;
+    line-height: 17px;
+    color: rgba(0, 0, 0, 0.6);
+    padding:20px;
+}
+
+[data-tooltip] {
+    display: inline-block;
+    position: relative;
+   
+    padding: 4px;
+}
+/* Tooltip styling */
+[data-tooltip]:before {
+    content: attr(data-tooltip);
+    display: none;
+    position: absolute;
+    background: #FFFFFF;
+    box-shadow: 0px 4px 5px rgba(172, 173, 175, 0.2), 0px 3px 14px rgba(172, 173, 175, 0.12), 0px 8px 10px rgba(172, 173, 175, 0.14);
+    border-radius: 2px;
+    padding: 4px 8px;
+    font-size: 14px;
+    line-height: 1.4;
+    min-width: 400px;
+    text-align: center;
+    
+}
+/* Dynamic horizontal centering */
+[data-tooltip-position="top"]:before,
+[data-tooltip-position="bottom"]:before {
+    left: 50%;
+    -ms-transform: translateX(-50%);
+    -moz-transform: translateX(-50%);
+    -webkit-transform: translateX(-50%);
+    transform: translateX(-50%);
+}
+/* Dynamic vertical centering */
+[data-tooltip-position="right"]:before,
+[data-tooltip-position="left"]:before {
+    top: 50%;
+    -ms-transform: translateY(-50%);
+    -moz-transform: translateY(-50%);
+    -webkit-transform: translateY(-50%);
+    transform: translateY(-50%);
+}
+[data-tooltip-position="top"]:before {
+    bottom: 100%;
+    margin-bottom: 6px;
+}
+[data-tooltip-position="right"]:before {
+    left: 100%;
+    margin-left: 6px;
+}
+[data-tooltip-position="bottom"]:before {
+    top: 100%;
+    margin-top: 6px;
+}
+[data-tooltip-position="left"]:before {
+    right: 100%;
+    margin-right: 6px;
+}
+
+/* Tooltip arrow styling/placement */
+[data-tooltip]:after {
+    content: '';
+    display: none;
+    position: absolute;
+    width: 0;
+    height: 0;
+    border-color: transparent;
+    border-style: solid;
+}
+/* Dynamic horizontal centering for the tooltip */
+[data-tooltip-position="top"]:after,
+[data-tooltip-position="bottom"]:after {
+    left: 50%;
+    margin-left: -6px;
+}
+/* Dynamic vertical centering for the tooltip */
+[data-tooltip-position="right"]:after,
+[data-tooltip-position="left"]:after {
+    top: 50%;
+    margin-top: -6px;
+}
+[data-tooltip-position="top"]:after {
+    bottom: 100%;
+    border-width: 6px 6px 0;
+    border-top-color: #000;
+}
+[data-tooltip-position="right"]:after {
+    left: 100%;
+    border-width: 6px 6px 6px 0;
+    border-right-color: #000;
+}
+[data-tooltip-position="bottom"]:after {
+    top: 100%;
+    border-width: 0 6px 6px;
+    border-bottom-color: #FFFFFF;
+    /* box-shadow: 0px 4px 5px rgba(172, 173, 175, 0.2), 0px 3px 14px rgba(172, 173, 175, 0.12), 0px 8px 10px rgba(172, 173, 175, 0.14); */
+}
+[data-tooltip-position="left"]:after {
+    right: 100%;
+    border-width: 6px 0 6px 6px;
+    border-left-color: #000;
+}
+/* Show the tooltip when hovering */
+[data-tooltip]:hover:before,
+[data-tooltip]:hover:after {
+    display: block;
+    z-index: 50;
+}
+
+ 
+
+@media(max-width:1100px){
+
+    .CarouselDesktop{
+        display: none;
+        }
+    .CarouselMobile{
+        display: inline;
+    }
+
+    .CustomizedPlanText{
+        justify-content: space-between;
+    }
+    .CardParent{
+        height:170px;
+        margin:0 13px;
+
+    }
+
+    .CardParentFocus{
+        height:170px;
+        margin:0 13px;
+    }
+    .CardParentMonthFocus{
+   
+    width:132.5px;
+    padding:10px 0;
+  
+    
+}
+
+    .CardParentMonth{
+    width:135px;
+    padding:10px 0;
+    
+   
+
+}
+
+    .CardParentCost{
+        width:133px;
+
+    }
+
+    .CardContainer{
+        margin:20px 5px 0 0;
+    }
+
+   .CheckBoxLabel{
+       width:auto;
+   }
+
+   .CheckBoxLabelFocus{
+       width:auto;
+   }
+    .CheckboxButtonContainer{
+        justify-content: space-between;
+        padding-right:0;
+        align-items: center;
+       
+    }
+
+   
+
+    .TnC{
+        display: none;
+    }
+
+    [data-tooltip-position="top"]:before,
+[data-tooltip-position="bottom"]:before {
+    left: 50%;
+    -ms-transform: translateX(-50%);
+    -moz-transform: translateX(-50%);
+    -webkit-transform: translateX(-50%);
+    transform: translateX(-90%);
+}
+[data-tooltip]:before {
+    content: attr(data-tooltip);
+    display: none;
+    position: absolute;
+   box-shadow: 0px 4px 5px rgba(172, 173, 175, 0.2), 0px 3px 14px rgba(172, 173, 175, 0.12), 0px 8px 10px rgba(172, 173, 175, 0.14);
+    border-radius: 2px;
+    padding: 4px 8px;
+    font-size: 14px;
+    line-height: 1.4;
+    min-width: 200px;
+    text-align: center;
+    border-radius: 4px;
+}
+}
